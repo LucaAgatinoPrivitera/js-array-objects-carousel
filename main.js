@@ -12,6 +12,8 @@ let c = 0;
 
 // Slide iniziale
 let singolaSlide = document.querySelector(".carosello").innerHTML = `<img src="${slide[c].foto}" class="slide active" alt="">
+<h2>${slide[c].titolo}</h2>
+<p>${slide[c].paragrafo}</p>
 <button id="btnPrev"><i class="fa-solid fa-arrow-up"></i></button>
 <button id="btnNext"> <i class="fa-solid fa-arrow-down"></i></button> `;
 
@@ -19,5 +21,8 @@ let buttonNext = document.getElementById("btnNext");
 const buttonPrev = document.getElementById("btnPrev");
 buttonNext.addEventListener("click", function(){ //Gira solamente 1 volta
     next();
+})
+buttonPrev.addEventListener("click", function(){ //Gira solamente 1 volta
+    prev();
 })
 

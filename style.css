@@ -2,6 +2,21 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+h2{
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(50%);
+    color: white;
+}
+p{
+    position: absolute;
+    bottom: 50px;
+    left: 40%;
+    transform: translateX(50%);
+    color: white;
 }
 
 .body_container {
@@ -40,4 +55,5 @@
 
 .active {
     display: block;
+    position: relative;
 }
