@@ -26,3 +26,6 @@ buttonPrev.addEventListener("click", function(){ //Gira solamente 1 volta
     prev();
 })
 
+//Bonus 2 Autoplay
+setInterval(autoplay, 3*1000)
+
