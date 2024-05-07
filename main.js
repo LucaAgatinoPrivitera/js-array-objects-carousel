@@ -19,15 +19,15 @@ let singolaSlide = document.querySelector(".carosello").innerHTML = `<img src="$
 
 let buttonNext = document.getElementById("btnNext");
 const buttonPrev = document.getElementById("btnPrev");
-buttonNext.addEventListener("click", function(){ //Gira solamente 1 volta
+buttonNext.addEventListener("click", function () { //Gira solamente 1 volta
     next();
 })
-buttonPrev.addEventListener("click", function(){ //Gira solamente 1 volta
+buttonPrev.addEventListener("click", function () { //Gira solamente 1 volta
     prev();
 })
 
 //Bonus 2 Autoplay
-setInterval(autoplay, 3*1000)
+setInterval(autoplay, 3 * 1000)
 
 let t1 = document.querySelector("#primo");
 let t2 = document.querySelector("#secondo");
@@ -35,6 +35,22 @@ let t3 = document.querySelector("#terzo");
 let t4 = document.querySelector("#quarto");
 let t5 = document.querySelector("#quinto");
 
-t1.addEventListener("click", function(){
-    console.log(this)
+t1.addEventListener("click", function () {
+    select();
+})
+
+t2.addEventListener("click", function () {
+    select2();
+})
+
+t3.addEventListener("click", function () {
+    select3();
+})
+
+t4.addEventListener("click", function () {
+    select4();
+})
+
+t5.addEventListener("click", function () {
+    select5();
 })
