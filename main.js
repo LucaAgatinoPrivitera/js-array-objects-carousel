@@ -29,3 +29,12 @@ buttonPrev.addEventListener("click", function(){ //Gira solamente 1 volta
 //Bonus 2 Autoplay
 setInterval(autoplay, 3*1000)
 
+let t1 = document.querySelector("#primo");
+let t2 = document.querySelector("#secondo");
+let t3 = document.querySelector("#terzo");
+let t4 = document.querySelector("#quarto");
+let t5 = document.querySelector("#quinto");
+
+t1.addEventListener("click", function(){
+    console.log(this)
+})
