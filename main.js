@@ -13,9 +13,7 @@ let c = 0;
 // Slide iniziale
 let singolaSlide = document.querySelector(".carosello").innerHTML = `<img src="${slide[c].foto}" class="slide active" alt="">
 <h2>${slide[c].titolo}</h2>
-<p>${slide[c].paragrafo}</p>
-<button id="btnPrev"><i class="fa-solid fa-arrow-up"></i></button>
-<button id="btnNext"> <i class="fa-solid fa-arrow-down"></i></button> `;
+<p>${slide[c].paragrafo}</p>`;
 
 let buttonNext = document.getElementById("btnNext");
 const buttonPrev = document.getElementById("btnPrev");
@@ -27,7 +25,7 @@ buttonPrev.addEventListener("click", function () { //Gira solamente 1 volta
 })
 
 //Bonus 2 Autoplay
-setInterval(autoplay, 3 * 1000)
+// setInterval(autoplay, 3 * 1000)
 
 let t1 = document.querySelector("#primo");
 let t2 = document.querySelector("#secondo");

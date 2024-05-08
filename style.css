@@ -27,6 +27,7 @@ p{
 .carosello{
     margin: auto;
     position: relative;
+    margin-bottom: 5rem;
 }
 .fa-arrow-up,
 .fa-arrow-down{
@@ -36,13 +37,14 @@ p{
     padding: 0.3rem;
     background-color: white;
     border-radius: 0.5rem;
+    z-index: 100000;
 }
 .fa-arrow-up{
-    top: 3rem;
+    top: 2rem;
     left: 50%;
 }
 .fa-arrow-down{
-    bottom: 0.7rem;
+    bottom: 50rem;
     left: 50%;
 }
 
